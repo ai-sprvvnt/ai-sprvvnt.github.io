@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portafolio | Tu Nombre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de desarrollador web en formación, proyectos del bootcamp Tripleten y otros trabajos.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="nav__logo">Tu Nombre</a>
+      <ul class="nav__links">
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- PORTADA -->
+    <section id="home" class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Desarrollador Web en formación</h1>
+        <p class="hero__subtitle">
+          Estudiante de bootcamp Tripleten, construyendo proyectos reales con HTML, CSS y JavaScript.
+        </p>
+        <a href="#projects" class="hero__button">Ver proyectos</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- PROYECTOS -->
+    <section id="projects" class="section section--projects">
+      <h2 class="section__title">Proyectos</h2>
+      <p class="section__description">
+        Aquí encontrarás algunos de los proyectos que he desarrollado durante el bootcamp Tripleten y de forma independiente.
+      </p>
+
+      <div class="projects">
+        <!-- Proyecto 1 -->
+        <article class="project-card">
+          <h3 class="project-card__title">[Proyecto 1]</h3>
+          <p class="project-card__description">
+            Aquí después añadiremos el contexto, tu análisis y las conclusiones del proyecto.
+          </p>
+          <a href="#" class="project-card__link" target="_blank" rel="noreferrer">
+            Ver proyecto
+          </a>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card">
+          <h3 class="project-card__title">[Proyecto 2]</h3>
+          <p class="project-card__description">
+            Aquí después añadiremos el contexto, tu análisis y las conclusiones del proyecto.
+          </p>
+          <a href="#" class="project-card__link" target="_blank" rel="noreferrer">
+            Ver proyecto
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="section section--about">
+      <h2 class="section__title">Sobre mí</h2>
+      <p class="section__description">
+        Emprendedor, entusiasta y autodidacta. Actualmente estoy en transición hacia
+        el desarrollo web a través del bootcamp Tripleten, donde he trabajado en proyectos
+        con HTML, CSS, JavaScript y herramientas como GitHub y Jira.
+      </p>
+      <p>
+        Me interesan especialmente la mejora de procesos, la experiencia de usuario y la
+        construcción de soluciones digitales que aporten valor real a las personas y a las organizaciones.
+      </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section section--contact">
+      <h2 class="section__title">Contacto</h2>
+      <p class="section__description">
+        Si quieres ponerte en contacto conmigo, estos son mis datos:
+      </p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noreferrer">linkedin.com/in/tu-perfil</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/ai-sprvvnt" target="_blank" rel="noreferrer">github.com/ai-sprvvnt</a></li>
+        <li><strong>Ubicación:</strong> Ciudad, País</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Tu Nombre – Portafolio</p>
+  </footer>
+
+  <script>
+    // Rellena el año automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
