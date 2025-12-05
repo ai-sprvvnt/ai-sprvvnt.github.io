@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2933;
+  background-color: #f9fafb;
+  line-height: 1.6;
+}
+
+/* Navegación */
+.header {
+  background-color: #0f172a;
+  color: #f9fafb;
+}
+
+.nav {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav__links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero / Portada */
+.hero {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  margin-bottom: 1.5rem;
+  max-width: 40rem;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background-color: #2563eb;
+  color: #f9fafb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero__button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Secciones */
+.section {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.section__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.section__description {
+  margin-bottom: 1.5rem;
+  max-width: 45rem;
+}
+
+/* Proyectos */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px rgba(15, 23, 42, 0.08);
+}
+
+.project-card__title {
+  margin-top: 0;
+}
+
+.project-card__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.project-card__link:hover {
+  text-decoration: underline;
+}
+
+/* Contacto */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li + li {
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
