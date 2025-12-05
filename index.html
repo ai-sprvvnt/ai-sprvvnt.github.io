@@ -10,7 +10,7 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <a href="#home" class="nav__logo">Tu Nombre</a>
+      <a href="#home" class="nav__logo">Felipe García</a>
       <ul class="nav__links">
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#about">Sobre mí</a></li>
@@ -21,10 +21,10 @@
     <!-- PORTADA -->
     <section id="home" class="hero">
       <div class="hero__content">
-        <h1 class="hero__title">Desarrollador Web en formación</h1>
-        <p class="hero__subtitle">
-          Estudiante de bootcamp Tripleten, construyendo proyectos reales con HTML, CSS y JavaScript.
-        </p>
+        <h1 class="hero__title">Frontend Developer en formación</h1>
+          <p class="hero__subtitle">
+            Estudiante del bootcamp Tripleten, construyendo proyectos reales con HTML, CSS y JavaScript.
+          </p>
         <a href="#projects" class="hero__button">Ver proyectos</a>
       </div>
     </section>
@@ -32,36 +32,85 @@
 
   <main>
     <!-- PROYECTOS -->
-    <section id="projects" class="section section--projects">
-      <h2 class="section__title">Proyectos</h2>
-      <p class="section__description">
-        Aquí encontrarás algunos de los proyectos que he desarrollado durante el bootcamp Tripleten y de forma independiente.
-      </p>
-
-      <div class="projects">
-        <!-- Proyecto 1 -->
-        <article class="project-card">
-          <h3 class="project-card__title">[Proyecto 1]</h3>
-          <p class="project-card__description">
-            Aquí después añadiremos el contexto, tu análisis y las conclusiones del proyecto.
-          </p>
-          <a href="#" class="project-card__link" target="_blank" rel="noreferrer">
-            Ver proyecto
-          </a>
-        </article>
-
-        <!-- Proyecto 2 -->
-        <article class="project-card">
-          <h3 class="project-card__title">[Proyecto 2]</h3>
-          <p class="project-card__description">
-            Aquí después añadiremos el contexto, tu análisis y las conclusiones del proyecto.
-          </p>
-          <a href="#" class="project-card__link" target="_blank" rel="noreferrer">
-            Ver proyecto
-          </a>
-        </article>
-      </div>
-    </section>
+    <!-- Detalle Proyecto 1: Around -->
+      <section id="project-around-details" class="section project-detail">
+        <h2 class="section__title">Alrededor de los EE.UU. – Detalles del proyecto</h2>
+      
+        <h3>Contexto del proyecto</h3>
+        <p>
+          Este proyecto forma parte del <strong>Sprint 11</strong> del bootcamp de Desarrollo Web de Tripleten.
+          El objetivo fue refactorizar el sitio “Alrededor de los EE.UU.” para utilizar
+          <strong>programación orientada a objetos (POO)</strong> en JavaScript y consumir una
+          <strong>API REST</strong> para gestionar la información del usuario y las tarjetas.
+        </p>
+        <p>
+          El sitio permite <em>editar el perfil</em>, <em>añadir nuevas tarjetas</em> con imágenes y títulos,
+          <em>dar “me gusta”</em>, <em>eliminar tarjetas</em> y <em>visualizar imágenes en tamaño completo</em> mediante ventanas emergentes (popups).
+        </p>
+      
+        <h3>Mi análisis</h3>
+        <p>
+          El principal reto fue pasar de un código procedural a una arquitectura basada en clases ES6
+          (<code>Card</code>, <code>Section</code>, <code>Popup</code>, <code>PopupWithImage</code>,
+          <code>PopupWithForm</code>, <code>PopupWithConfirmation</code>, <code>UserInfo</code>,
+          <code>FormValidator</code> y <code>Api</code>). Esto implicó pensar en términos de
+          <strong>responsabilidades</strong> y <strong>acoplamiento débil</strong>, separando la lógica de UI,
+          la validación de formularios y las llamadas a la API en módulos independientes.
+        </p>
+        <p>
+          También afiné la <strong>validación de formularios</strong> usando las capacidades nativas de HTML5
+          y clases de error, además de gestionar estados de carga en los botones al enviar formularios.
+          Trabajé con <strong>promesas</strong> y <code>fetch</code> para sincronizar la interfaz con el servidor,
+          incluyendo la carga inicial de usuario y tarjetas, los likes y la actualización del avatar.
+        </p>
+      
+        <h3>Conclusiones principales</h3>
+        <ul>
+          <li>Comprendí mejor cómo estructurar aplicaciones front-end usando clases, módulos ES6 y principios de POO.</li>
+          <li>Fortalecí mi manejo de <strong>Fetch API</strong> y el trabajo con endpoints REST para operaciones CRUD.</li>
+          <li>Mejoré la experiencia de usuario con validación activa, popups accesibles y estados de carga en los formularios.</li>
+          <li>Este proyecto demuestra mi capacidad para mantener código organizado, escalable y alineado con buenas prácticas modernas.</li>
+        </ul>
+      </section>
+      
+      <!-- Detalle Proyecto 2: Homeland -->
+      <section id="project-homeland-details" class="section project-detail">
+        <h2 class="section__title">De patria a patria – Detalles del proyecto</h2>
+      
+        <h3>Contexto del proyecto</h3>
+        <p>
+          Este proyecto corresponde al <strong>Sprint 6</strong> del bootcamp de Desarrollo Web.
+          El objetivo fue ampliar el sitio del Sprint 5 añadiendo nuevas secciones
+          (<code>photo-grid</code> y <code>places</code>) y lograr un diseño
+          <strong>100% responsivo</strong> para las resoluciones de <strong>320px, 768px y 1280px</strong>,
+          partiendo de un diseño en Figma.
+        </p>
+        <p>
+          El sitio presenta una galería fotográfica y descripciones de ciudades relacionadas con los autores,
+          con imágenes optimizadas y un layout que se adapta suavemente a resoluciones intermedias.
+        </p>
+      
+        <h3>Mi análisis</h3>
+        <p>
+          El principal foco técnico fue dominar <strong>CSS Grid</strong> y <strong>Flexbox</strong> para construir
+          una maquetación flexible que respetara las especificaciones de Figma en distintas resoluciones.
+          Implementé una estructura de archivos basada en la <strong>metodología BEM</strong>, con CSS separado por bloques,
+          lo que mejora la mantenibilidad y la escalabilidad del proyecto.
+        </p>
+        <p>
+          Presté atención a la <strong>tipografía</strong> (fuentes locales Inter y Noto Serif), al uso de
+          <strong>degradados</strong>, <strong>sombras</strong> y al recorte de imágenes con
+          <code>object-fit</code> para mantener una apariencia consistente en todas las tarjetas y secciones.
+        </p>
+      
+        <h3>Conclusiones principales</h3>
+        <ul>
+          <li>Consolidé mi experiencia en <strong>diseño responsivo</strong> usando Grid, Flexbox y media queries.</li>
+          <li>Aprendí a traducir un diseño de Figma a código pixel-perfect cuidando espaciados, tipografía e imágenes.</li>
+          <li>Refiné el uso de BEM y la organización de estilos en bloques, lo que facilita la lectura y el mantenimiento del CSS.</li>
+          <li>Este proyecto muestra mi capacidad para crear interfaces estáticas limpias, modernas y adaptables a múltiples dispositivos.</li>
+        </ul>
+      </section>
 
     <!-- SOBRE MÍ -->
     <section id="about" class="section section--about">
@@ -83,17 +132,17 @@
       <p class="section__description">
         Si quieres ponerte en contacto conmigo, estos son mis datos:
       </p>
-      <ul class="contact-list">
-        <li><strong>Email:</strong> <a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noreferrer">linkedin.com/in/tu-perfil</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/ai-sprvvnt" target="_blank" rel="noreferrer">github.com/ai-sprvvnt</a></li>
-        <li><strong>Ubicación:</strong> Ciudad, País</li>
-      </ul>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:ai.sprvvnt@gmail.com">ai.sprvvnt@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/TU-SLUG-AQUI" target="_blank" rel="noreferrer">linkedin.com/in/felipe-garcia-n/</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/ai-sprvvnt" target="_blank" rel="noreferrer">github.com/ai-sprvvnt</a></li>
+          <li><strong>Ubicación:</strong> Guadalajara, Jal., México</li>
+        </ul>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Tu Nombre – Portafolio</p>
+    <p>© <span id="year"></span> Felipe García – Portafolio</p>
   </footer>
 
   <script>
