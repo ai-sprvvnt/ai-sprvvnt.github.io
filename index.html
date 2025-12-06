@@ -20,7 +20,7 @@
     <div class="page__container">
       <!-- HEADER -->
       <header class="header page__header">
-        <nav class="header__nav">
+        <nav class="header__nav" aria-label="Navegación principal">
           <a href="#home" class="header__logo">Felipe García</a>
           <ul class="header__links">
             <li class="header__item">
@@ -53,9 +53,13 @@
       <!-- CONTENIDO PRINCIPAL -->
       <main class="content page__content">
         <!-- PROYECTOS (tarjetas + grid) -->
-        <section id="projects" class="section section_type_projects">
+        <section
+          id="projects"
+          class="section section_type_projects"
+          aria-labelledby="projects-title"
+        >
           <div class="section__header">
-            <h2 class="section__title">Proyectos</h2>
+            <h2 id="projects-title" class="section__title">Proyectos</h2>
             <p class="section__text">
               Selección de proyectos desarrollados durante el bootcamp de
               Desarrollo Web en Tripleten, donde he aplicado maquetación
@@ -97,7 +101,7 @@
                       href="https://ai-sprvvnt.github.io/web_project_around/"
                       class="project-card__link"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       Ver demo
                     </a>
@@ -105,7 +109,7 @@
                       href="https://github.com/ai-sprvvnt/web_project_around"
                       class="project-card__link"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       Ver código
                     </a>
@@ -287,7 +291,7 @@
           <ul class="contact">
             <li class="contact__item">
               <strong>Email:</strong>
-              <a href="mailto:AI.SPRVVNT@GMAIL.COM" class="contact__link"
+              <a href="mailto:ai.sprvvnt@gmail.com" class="contact__link"
                 >ai.sprvvnt@gmail.com</a
               >
             </li>
